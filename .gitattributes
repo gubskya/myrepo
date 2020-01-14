@@ -1,0 +1,67 @@
+# Encapsulating configuration for management of line endings under GIT version
+# for multi-OS project.
+
+# Enabling new line ending auto handling system for all file types
+*				text=auto
+
+#####################################
+# Explicitly defining text files    #
+#####################################
+*.java			text diff=java
+*.xml			text
+*.csv			text
+*.xsd			text
+*.conf			text
+*.template		text
+*.cnf			text
+*.txt			text
+*.json			text
+*.properties	text
+*.css			text diff=css
+*.jsp			text
+*.js			text
+*.ts			text
+*.html			text diff=html
+*.scss			text
+*.vm			text
+*.groovy		text
+*.xmi			text
+*.less			text
+*.tag			text
+*.tld			text
+*.css.map		text
+*.md			text
+*.less			text
+*.yaml			text
+*.yml			text
+
+#####################################
+# Explicitly defining binary files  #
+#####################################
+*.jar			binary
+*.war			binary
+*.png			binary
+*.svg			binary
+*.jpg			binary
+*.gif			binary
+*.ico			binary
+*.zip			binary
+*.eot			binary
+*.ttf			binary
+*.woff			binary
+*.woff2			binary
+*.otf			binary
+*.xlsx			binary
+*.xls			binary
+
+#####################################
+# Forced line endings               #
+#####################################
+*.bat			text eol=crlf
+*.sh			text eol=lf
+
+#####################################
+# Others                            #
+#####################################
+# Defining files, that does not support diff
+#.extension		-diff

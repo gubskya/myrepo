@@ -1,0 +1,8 @@
+quarkus:
+  datasource:
+    url: vertx-reactive:mysql://localhost:3306/test?useConfigs=maxPerformance&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+db:
+  schema:
+    create : true
